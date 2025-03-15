@@ -1,0 +1,477 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    
+    font-family: 'K2D', sans-serif;
+
+}
+
+:root {
+    --primary-font: 'Lora', serif;
+    --secondary-font: 'Open Sans', sans-serif;
+}
+
+h1,
+h2 {
+    font-family: var(--primary-font);
+    font-family: 'Tomorrow', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ==============================================HEADER==================================== ==*/
+.header_warp {
+    position: sticky;
+
+    z-index: 1000;
+}
+
+.header_main {
+
+    background-color: #0a091e;
+    ;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 15%;
+
+
+}
+
+.header_logo img {
+    height: 70px;
+    width: 85px;
+    margin-left: 50px;
+    padding-top: 7px;
+}
+
+.header_list {
+    width: 100%;
+    margin: auto 10px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.header_list ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.header_list li a {
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.header_list ul li a {
+    color: white;
+    padding: 10px 0px;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+
+.header_list ul li a:hover {
+    background-color: #211a41e6;
+    color: #ffff;
+}
+
+
+
+/* ===================================HOMEPAGE================================================== */
+.home_page {
+    position: relative;
+    padding-top: 120px;
+    font-family: 'Alegreya', serif;
+    /* box-shadow: inset 0px 0px 100px 1000px rgba(0, 0, 0,0.5); */
+
+}
+
+.home_page-video {
+    position: absolute;
+    background-color: #0a091e;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    
+}
+
+.home_page-text {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    font-size: 0px;
+    color: #ffff;
+    
+}
+
+.home_page-text h1 {
+    font-family: var(--primary-font);
+    font-size: 90px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #aea4d5e6;
+    margin-top: 150px;
+    font-family: 'Alegreya', serif;
+}
+
+
+
+
+.home_page-text p {
+    color: #000;
+    font-family: var(--primary-font);
+    font-size: 20px;
+    font-weight: 400;
+    justify-content: center;
+    text-align: center;
+    margin-top: -531px;
+}
+
+
+
+/* ======================================INFORMATION============================================= */
+.info_warp {
+    
+    background-image: url(image/milestone-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    
+}
+
+.info_main {
+    background-color: rgb(8 14 24 / 90%);
+    color: white;
+    padding-top: 110px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.info i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.info h1 {
+    font-family: var(--primary-font);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.info p {
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.top {
+    padding: 10px;
+    margin: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.top:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 20px 0px black;
+}
+
+.bottom {
+    padding: 10px;
+    margin: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.bottom:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 20px 0px black;
+}
+
+.info button {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px 0px;
+    transition: all .5s ease-in-out;
+}
+
+.info button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #000000e6;
+}
+
+
+/* ======================================Offerd-Courses======================================= */
+.course_main {
+    background-color: #b2aef5;
+    text-align: center;
+    padding: 100px 20px 20px 20px;
+
+}
+
+.course_main h1 {
+    font-size: 30px;
+    border-bottom: 5px solid black;
+    width: 22%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px 0px;
+    text-shadow: 1px 3px lightslategray;
+}
+
+.course_main p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+.course {
+    background-color: #ffff;
+    position: relative;
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 3px solid lightgrey;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.course p {
+    font-size: 18px;
+}
+
+.course:hover {
+    border: 3px solid #150d88e6;
+    box-shadow: 0px 0px 30px 0px lightslategray;
+    cursor: pointer;
+}
+
+.outer img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.inner {
+    position: absolute;
+    top: 70%;
+    left: 45%;
+}
+
+.inner img {
+    height: 50px;
+    width: 50px;
+    border: 3px solid #ffff;
+    border-radius: 50%;
+}
+
+.course_info {
+    margin-top: 30px;
+}
+
+.course_info a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.5s ease-in-out;
+}
+
+.course_info a:hover {
+    color: #00ffffe6;
+}
+
+.course_info h4 {
+    font-size: 25px;
+    font-family: var(--primary-font);
+    border-bottom: 2px solid #0b0652e6;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.course_info p {
+    margin: 10px 0px;
+
+}
+
+/* ==========================================PHOTO================================================== */
+.photo_main {
+    background-color: rgb(7, 5, 18);
+    text-align: center;
+    padding-top: 90px;
+}
+
+.photo_main h1 {
+    font-size: 30px;
+    border-bottom: 5px solid #11183de6;
+    width: 20%;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-shadow: 0px 5px rgb(50, 97, 124);
+    color: white;
+}
+
+.photo {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+
+
+}
+
+.photo_left-top img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px black
+}
+
+.photo_left-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px -5px;
+
+}
+
+.photo_left-bottom img {
+    height: 200px;
+    width: 50%;
+    object-fit: cover;
+    object-position: center center;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px black
+}
+
+.photo_right-top img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px black
+}
+
+.photo_right-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px -5px;
+
+}
+
+.photo_right-bottom img {
+    height: 200px;
+    width: 50%;
+    object-fit: cover;
+    object-position: center center;
+    padding: 5px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px black
+}
+
+
+/* ========================================CONTACT-US======================================== */
+.conatact_main {
+    background-color: rgb(7, 5, 18);
+    /* padding:100px 40px 40px 40x; */
+
+
+
+}
+
+.conatact_main h1 {
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 5px solid #6c8cd5e6;
+    width: 20%;
+    margin: 0px auto;
+    color: white;
+    /* padding: 50px 0px 0px 0px; */
+    margin-bottom: 30px;
+    padding-top: 100px;
+    text-shadow: 0px 4px black;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.f-list h4 {
+    text-align: center;
+}
+
+.f-list p {
+    color: white;
+    margin-top: 10px;
+
+}
+
+.f-list span {
+    color: #6c8cd5e6;
+    margin: 10px;
+}
+
+.f-list ul {
+    list-style-type: none;
+}
+
+.f-list ul li a {
+    color: white;
+    margin-top: 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+.f-list ul li a:hover {
+    color: #6c8cd5e6;
+}
+
+.f-list h4 {
+    color: white;
+    border-bottom: 3px solid #6c8cd5e6;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.follow_list a {
+    margin: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.follow_list a:hover {
+    color: #6c8cd5e6;
+}
